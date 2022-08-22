@@ -9,8 +9,11 @@
 <body>
     <h1>bad words</h1>
     <?php 
-        $text='ciao questo è il testo che ho scritto'
+        $text='ciao questo è il testo che ho scritto';
+        $word='ciao';
     ?>
-    <h2>questa è la frase da modificare: <?php echo $text ?></h2>
+    <h2>questa è la frase da modificare: <?php echo $text; ?>, questa è la sua lunghezza: <?php echo strlen($text); ?> </h2>
+
+   
 </body>
 </html>
