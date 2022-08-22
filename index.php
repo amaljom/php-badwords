@@ -11,9 +11,13 @@
     <?php 
         $text='ciao questo è il testo che ho scritto';
     ?>
-    <h2>questa è la frase da modificare: <?php echo $text; ?>, questa è la sua lunghezza: <?php echo strlen($text); ?> </h2>
+    <h2>questa è la frase da modificare: <?php echo $text; ?> Questa è la sua lunghezza: <?php echo strlen($text); ?> </h2>
 
-    <h2> La parola da censurare è la seguente: <?php echo $_GET ['word']; ?></h2>
+    <h2> La parola da censurare è la seguente: <?php echo $_GET ['word']; $word=$_GET ['word']; ?></h2>
+    <?php 
+        $newText= str_replace($word, '***', $text);
+    ?>
+    <h2> la nuova frase è:<?php echo $newText; ?> Questa è la sua lunghezza: <?php echo strlen($newText); ?> </h2>
 
    
 </body>
